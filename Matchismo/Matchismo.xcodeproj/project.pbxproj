@@ -21,6 +21,10 @@
 		45E40FD718849AB20038F8C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E40FB918849AB20038F8C6 /* UIKit.framework */; };
 		45E40FDF18849AB20038F8C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45E40FDD18849AB20038F8C6 /* InfoPlist.strings */; };
 		45E40FE118849AB20038F8C6 /* MatchismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E40FE018849AB20038F8C6 /* MatchismoTests.m */; };
+		45E40FF41884AC450038F8C6 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E40FF31884AC450038F8C6 /* Card.m */; };
+		45E40FF81884ACD90038F8C6 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E40FF71884ACD90038F8C6 /* PlayingCard.m */; };
+		45E40FFB1884ACF60038F8C6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E40FFA1884ACF60038F8C6 /* Deck.m */; };
+		45E40FFE1884AD040038F8C6 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E40FFD1884AD040038F8C6 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		45E40FDC18849AB20038F8C6 /* MatchismoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchismoTests-Info.plist"; sourceTree = "<group>"; };
 		45E40FDE18849AB20038F8C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45E40FE018849AB20038F8C6 /* MatchismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchismoTests.m; sourceTree = "<group>"; };
+		45E40FF21884AC450038F8C6 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		45E40FF31884AC450038F8C6 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		45E40FF61884ACD90038F8C6 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		45E40FF71884ACD90038F8C6 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		45E40FF91884ACF60038F8C6 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		45E40FFA1884ACF60038F8C6 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		45E40FFC1884AD040038F8C6 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		45E40FFD1884AD040038F8C6 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,7 @@
 		45E40FBB18849AB20038F8C6 /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				45E40FF51884AC640038F8C6 /* card model */,
 				45E40FC418849AB20038F8C6 /* AppDelegate.h */,
 				45E40FC518849AB20038F8C6 /* AppDelegate.m */,
 				45E40FC718849AB20038F8C6 /* Main.storyboard */,
@@ -150,6 +163,21 @@
 				45E40FDD18849AB20038F8C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45E40FF51884AC640038F8C6 /* card model */ = {
+			isa = PBXGroup;
+			children = (
+				45E40FFC1884AD040038F8C6 /* PlayingCardDeck.h */,
+				45E40FFD1884AD040038F8C6 /* PlayingCardDeck.m */,
+				45E40FF91884ACF60038F8C6 /* Deck.h */,
+				45E40FFA1884ACF60038F8C6 /* Deck.m */,
+				45E40FF61884ACD90038F8C6 /* PlayingCard.h */,
+				45E40FF71884ACD90038F8C6 /* PlayingCard.m */,
+				45E40FF21884AC450038F8C6 /* Card.h */,
+				45E40FF31884AC450038F8C6 /* Card.m */,
+			);
+			name = "card model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +280,10 @@
 				45E40FCC18849AB20038F8C6 /* ViewController.m in Sources */,
 				45E40FC618849AB20038F8C6 /* AppDelegate.m in Sources */,
 				45E40FC218849AB20038F8C6 /* main.m in Sources */,
+				45E40FF81884ACD90038F8C6 /* PlayingCard.m in Sources */,
+				45E40FFE1884AD040038F8C6 /* PlayingCardDeck.m in Sources */,
+				45E40FFB1884ACF60038F8C6 /* Deck.m in Sources */,
+				45E40FF41884AC450038F8C6 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
